@@ -68,7 +68,7 @@ public class MinimumCandies {
             if(ratings[i] > ratings[i-1]){
                 
                 // #4.2. candies assign to the child will be maximum of (current candies, left neighbor's candy + 1)
-                candies[i] = Math.max(candies[i], candies[i-1] + 1);
+            	candies[i] = candies[i-1] + 1;
             }
             
         }
